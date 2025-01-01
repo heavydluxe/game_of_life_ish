@@ -1,0 +1,26 @@
+pygame.init()
+
+
+def main():
+    generation = 0 
+    os.system('clear')
+    while True:
+        set_base_array()
+        print("Generation #", generation)
+        generation = generation + 1
+        pygame.time.wait(500)
+        os.system('clear')
+
+
+# OLD STYLE, non-numpy iterations ...
+# def transform_array(x):
+#    new_array = []
+#    for row in x:
+#        new_row = []
+#        for element in row:
+#            new_row.append(int(element + 1))
+#        new_array.append(new_row)
+#    os.system('clear')
+#    print(new_array)
+#    time.sleep(1)
+#    return new_array
